@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: system-ui, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fde2ff, #e0f7fa);
 }
 
-.App-header {
-  background-color: #282c34;
+/* ---------- LOGIN ---------- */
+.login {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 18px;
+}
+
+.login h1 {
+  color: #7b1fa2;
+}
+
+.login input {
+  width: 240px;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.login button {
+  width: 240px;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  background: #7b1fa2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.subtext {
+  color: #666;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ---------- TOP BAR ---------- */
+.topbar {
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4a148c;
+}
+
+.topbar span {
+  color: #d81b60;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.content {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 28px;
+  color: #d81b60;
+  margin-bottom: 20px;
+}
+
+.count {
+  font-size: 64px;
+  font-weight: bold;
+  color: #4a148c;
+  margin-bottom: 40px;
+}
+
+.add-btn {
+  font-size: 28px;
+  padding: 22px 60px;
+  border-radius: 20px;
+  border: none;
+  background: #ff4081;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.add-btn:active {
+  transform: scale(0.95);
+}
+
+.hint {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
 }
