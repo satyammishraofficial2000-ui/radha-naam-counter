@@ -40,7 +40,7 @@ function Login({ setUser }) {
         onChange={(e) => setName(e.target.value)}
       />
 
-      <button onClick={login}>Login</button>
+      <button onClick={login}>Google</button>
 
       <p className="subtext">
         Simple • Peaceful • Personal

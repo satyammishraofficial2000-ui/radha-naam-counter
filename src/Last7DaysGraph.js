@@ -22,7 +22,7 @@ function Last7DaysGraph({ data }) {
           labels: Object.keys(data),
           datasets: [
             {
-              label: "Last 7 Days",
+              label: "Naam Jaap",
               data: Object.values(data),
               backgroundColor: "#f472b6",
               borderRadius: 8,
